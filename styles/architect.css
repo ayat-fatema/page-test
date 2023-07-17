@@ -1,0 +1,262 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Lato", sans-serif;
+  font-family: "Open Sans", sans-serif;
+}
+.btn-primary {
+  border-radius: 8px;
+  background: #ff900e;
+  padding: 20px 25px;
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: 0;
+}
+.description {
+  color: var(--dark-03, #727272);
+  font-size: 1rem;
+  font-weight: 400;
+}
+/* header styles */
+header {
+  background: rgba(255, 144, 14, 0.1);
+  padding: 50px 240px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-title {
+  color: #131313;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+}
+nav > ul {
+  display: flex;
+  list-style: none;
+
+  /* gap: 10px; */
+}
+nav li {
+  list-style: none;
+  margin-right: 30px;
+  font-weight: 500;
+  font-size: 1rem;
+}
+nav li a {
+  text-decoration: none;
+  color: #424242;
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+/* banner section */
+.banner-content {
+  max-width: 800px;
+  text-align: center;
+  margin: 0 auto;
+}
+.banner-title {
+  color: var(--dark-01, #131313);
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.banner > img {
+  width: 100%;
+  /* width 100% mane ki bujhay recap koro */
+  margin-top: 20px;
+}
+
+/* main style */
+main {
+  max-width: 70%;
+  margin: 70px auto;
+}
+/* teams */
+.teams-container {
+  display: flex;
+  align-items: center;
+  /* gap: 20px; */
+}
+.teams-img-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+.teams-content {
+  padding: 0px 70px;
+}
+.teams-title {
+  font-size: 2.2rem;
+}
+.quick-list {
+  color: #727272;
+  font-weight: 500;
+}
+.text-features {
+  color: #ff900e;
+  font-weight: 700;
+}
+/* features */
+.features {
+  display: flex;
+  gap: 50px;
+  margin-top: 130px;
+}
+.feature-title {
+  border-left: 5px solid #ff900e;
+  /* padding-left: 20px; */
+}
+.feature-content .feature-card {
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+  padding: 30px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+.feature-image img {
+  height: 70%;
+  margin-left: 90px;
+  width:100% ;
+}
+.ten-years-badge {
+  border-radius: 8px;
+  background: #ff900e;
+  color: #fff;
+  text-align: center;
+  width: 342px;
+  padding: 30px;
+  position: relative;
+  bottom: 100px;
+}
+.ten-years-badge h2 {
+  font-size: 4rem;
+  margin: 0;
+}
+.ten-years-badge p {
+  font-size: 1.5rem;
+}
+/* facts */
+.facts {
+  text-align: center;
+}
+.facts-card-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+.facts-card-container .card {
+  border-radius: 8px;
+  border: 1px solid #ff900e;
+  justify-content: space-around;
+  text-align: center;
+  padding: 30px;
+}
+.facts-card-container .card-title {
+  color: var(--dark-03, #727272);
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 5px;
+}
+.facts-card-container .card-stats {
+  font-size: 2.8rem;
+  color: #424242;
+  margin: 10px 0px;
+}
+/* sponsor styles */
+.sponsors {
+  text-align: center;
+}
+.sponsors-img-container {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 30px;
+}
+sponsors-img-container img {
+  width: 165px;
+}
+/* footer */
+.foot {
+  text-align: center;
+  border-radius: 8px;
+  background: #fff4e7;
+  padding: 20px 0px;
+  margin: 20px 240px;
+}
+
+/* responsive Styles  */
+
+/* mobile devices */
+@media screen and (max-width: 576px) {
+  header {
+    padding: 20px;
+  }
+  nav,
+  .teams-container,
+  .facts-card-container,
+  .sponsors-img-container,
+  .features {
+    flex-direction: column;
+  }
+
+  .teams-img-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .teams-content {
+    padding: 0px 20px;
+  }
+  .facts-card-container {
+    gap: 20px;
+  }
+  .foot {
+    margin: 20px 40px;
+  }
+  main {
+    margin: 70px 10px;
+  }
+  .feature-image img {
+    width: 90%;
+    margin: 0;
+  }
+  .ten-years-badge {
+    
+    max-width: 250px;
+    padding: 0px;
+    position: relative;
+    bottom: 40px;
+  }
+  .ten-years-badge h2 {
+    font-size: 2rem;
+    margin: 0;
+  }
+  .ten-years-badge p {
+    font-size: 1rem;
+  }
+}
+/* medium devices */
+@media screen and (min-width: 576px) and (max-width: 960px) {
+  nav,
+  .teams-container,
+  .sponsors-img-container, .features {
+    flex-direction: column;
+  }
+  header {
+    padding: 50px;
+  }
+  .foot {
+    margin: 20px 40px;
+  }
+  main {
+    margin: 70px 10px;
+  }
+}
